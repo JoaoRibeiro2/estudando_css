@@ -4,15 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Layout</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;1,100&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/97485272cd.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <a href="/">Logo</a>
+    <header class="cabecalho">
+        <h1 class="logo">
+            <a href="index.html" title="NodeShop"> <i class="fas fa-shopping-bag"></i> NodeShop</a>
+        </h1>
+        <form method="post">
+            <input type="text" placeholder="Faça uma busca" name="">
+            <button><i class="fa fa-search fa-lg"></i> </button>
+
+        </form>
     </header>
-    <nav>
-        <ul></ul>
+    <nav class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Produtos</a></li>
+            <li><a href="#">Seriviços</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+        <div class="social-icons">
+            <a href="#" class="btn-facebook"><i class="fa fa-facebook fa-lg"></i>  </a>
+            <a href="#" class="btn-twitter"><i class="fa fa-twitter fa-lg"></i> </a>
+            <a href="#" class="btn-google"><i class="fa fa-google fa-lg"></i> </a>
+        </div>
     </nav>
+    <main class="principal">
+        <article class="sobre">
+            <h2>Sobre Nós</h2>
+            <img src="img/muie.png" alt="foto-da-loja">
+            <p>
+                O Node.js pode ser definido como um ambiente de execução Javascript server-side.
+                Isso significa que com o Node.js é possível criar aplicações Javascript para rodar como uma aplicação
+                standalone em uma máquina, não dependendo de um browser para a execução, como estamos acostumados.
+                Apesar de recente, o Node.js já é utilizado por grandes empresas no mercado de tecnologia, como Netflix, Uber e LinkedIn.
+                O principal motivo de sua adoção é a sua alta capacidade de escala. Além disso, sua arquitetura, flexibilidade e baixo custo, o tornam uma boa escolha para implementação de Microsserviços e componentes da arquitetura Serverless. Inclusive, os principais fornecedores de produtos e serviços Cloud já têm suporte para desenvolvimento de soluções escaláveis utilizando o Node.js. <br><br>
+                A principal característica que diferencia o Node.JS de outras tecnologias, como PHP, Java, C#, é o fato de sua execução ser single-thread. Ou seja, apenas uma thread é responsável por executar o código Javascript da aplicação, enquanto que nas outras linguagens a execução é multi-thread. <br><br>
+                Em um servidor web utilizando linguagens tradicionais, para cada requisição recebida é criada uma nova thread para tratá-la. A cada requisição, serão demandados recursos computacionais (memória RAM, por exemplo) para a criação dessa nova thread. Uma vez que esses recursos são limitados, as threads não serão criadas infinitamente, e quando esse limite for atingido, as novas requisições terão que esperar a liberação desses recursos alocados para serem tratadas.
+            </p>
+        </article>
+    </main>
 </body>
 </html>
